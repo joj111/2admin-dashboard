@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.left {
+    background-color: #25abf8;
+    color: white;
+    font-weight: 700;
+    padding: 5%;
+}
+
+.left>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 150%;
+    margin-left: 0px;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 1fr 10px 30fr;
+}
+
+.top-one {
+    display: flex;
+    padding: 1% 2%;
+}
+
+.top-one>div {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 2%;
+    margin-right: 10%;
+    border-radius: 25px;
+    border-style: none;
+    background-color: rgb(221, 221, 221);
+    padding: 10px 15px;
+}
+
+.top-right {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin-right: 5%;
+}
+
+.top-two {
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome, .buttons {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    background-color: #25abf8;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    padding: 5px 30px;
+}
+
+.grad {
+  height: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 5px rgb(87, 87, 87);
+}
+
+.main {
+  display: grid;
+  background-color: rgb(228, 228, 228);
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2%;
+  height: min-content;
+}
+
+.projects {
+  display: grid;
+  grid-row: 1 / 3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr 1fr;
+  height: max-content;
+}
+
+.projects>.start {
+  grid-column: 1 / 3;
+}
+
+.box {
+  height: fit-content;
+  margin: 10px;
+  padding: 5%;
+  background-color: white;
+  box-shadow: -5px 0px;
+  border-radius: 5px;
+}
+
+.box-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-top: 1%;
+}
+
+.start {
+  display: grid;
+  grid-column: 1 / 2;
+  height: fit-content;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  height: min-content;
+  margin: 10px;
+}
+
+.an-holder {
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.announce {
+  padding: 10px;
+}
+
+hr {
+  width: 80%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.trending {
+  margin: 10px;
+}
+
+.trend-holder {
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.box>p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.box>.text {
+  color: grey;
+  font-size: 15px;
+}
+
+.announce>p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.announce>.text {
+  color: grey;
+  font-size: 10px;
+}
+
+.trend-container>.trend {
+  margin: 10px;
+}
+
+.trend {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 10px;
+}
+img {
+  
+  grid-row: 1 / span 2;
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 400px;
+}
+
+
+.trend>.intro {
+  font-size: 12px;
+}
