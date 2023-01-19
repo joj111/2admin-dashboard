@@ -185,7 +185,6 @@ button {
   grid-row: 1 / 3;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20px 1fr 1fr 1fr;
-  height: max-content;
 }
 
 .projects>.start {
@@ -219,7 +218,6 @@ button {
 .announcements {
   display: grid;
   grid-template-rows: 20px 1fr;
-  height: min-content;
   margin: 10px;
 }
 
@@ -289,5 +287,5 @@ img {
 
 
 .trend>.intro {
-  font-size: 12px;
+  font-size: 15px;
 }
